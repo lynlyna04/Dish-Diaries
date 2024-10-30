@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Dish Diaries</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg custom-navbar py-3 fixed-top mb-5" id="home">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#" href="#">
+                <img src="image-removebg-preview (3).png" alt="Recipe Book Logo" width="30" height="30" class="d-inline-block align-text-top">
+                Dish Diaries
+              </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link ms-5">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#add" class="nav-link ms-5">Add Recipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#display" class="nav-link ms-5">View Recipes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="p-5 mt-5">
+        <div class="container">
+            <h1 class="mt-5"><b>Welcome to Recipe Book!</b></h1><br>
+            <h4>Discover, create, and share your favorite recipes with our 
+                easy-to-use platform.<br> Whether you're a seasoned chef or a kitchen novice, 
+                our collection of recipes, tips, and tools will inspire your culinary 
+                journey. Start adding your own recipes today and build your unique cookbook!</h4>
+        </div>
+    </section>
+
+    <section class="p-5" id="add">
+        <div class="container text-center">
+            <button type="button" class="custom-btn mx-auto" data-bs-toggle="modal" data-bs-target="#recipeModal">Add A New Recipe</button>
+        </div>
+
+        <!-- Recipe Modal -->
+        <div class="modal fade custom-modal" id="recipeModal" tabindex="-1" aria-labelledby="recipeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="recipeModalLabel">Add A New Recipe</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="errorAlert" class="alert alert-danger d-none">Please fill out all required fields!</div>
+                        <div class="mb-3">
+                            <label for="recipeNameInput" class="form-label">Recipe Name:</label>
+                            <input type="text" class="form-control" id="recipeNameInput">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="inputing">Ingredients:</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Enter ingredients" aria-label="Ingredients" id="inputing">
+                                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
+                            </div>
+                            <ul class="ings mt-3 list-group"></ul>
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipeInstructions" class="form-label">Instructions:</label>
+                            <textarea class="form-control" id="recipeInstructions" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipeImageInput" class="form-label">Image:</label>
+                            <input type="file" class="form-control" id="recipeImageInput">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="custom-btn2" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="custom-btn1">Save Recipe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5" id="display">
+        <h2> <b>Recipes :</b></h2><br>
+        <div class="row justify-content-center g-4 mb-5" id="displaySection">
+            <!-- Recipe cards will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <!-- Recipe Details Modal -->
+    <div class="modal fade custom-modal1" id="recipeDetailsModal" tabindex="-1" aria-labelledby="recipeDetailsModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="recipeDetailsModalLabel">Recipe Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImage" class="img-fluid" alt="Recipe Image" />
+                    <h3 id="modalTitle"></h3>
+                    <h4>ingredients :</h4>
+                    <br>
+                    <ul id="modalIngredients" class="list-group">
+                    </ul>
+                    <br>
+                    <h4> instructions :</h4>
+                    <p id="modalDescription"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="custom-btn1" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer py-4 mt-5 custom-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h5><b>Dish Diaries</b></h5>
+              <p>Your go-to app for amazing recipes. Discover, create, and share!</p>
+            </div>
+            <div class="col-md-4">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                <li><a href="#home" class="text-white text-decoration-none">Home</a></li>
+                <li><a href="#add" class="text-white text-decoration-none">Add Recipe</a></li>
+                <li><a href="#display" class="text-white text-decoration-none">View Recipes</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h5>Contact Us</h5>
+              <p>Email: info@dishdiaries.com</p>
+              <p>Phone: +123 456 789</p>
+            </div>
+          </div>
+          <div class="text-center pt-3">
+            <p>&copy; 2024 Dish Diaries. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

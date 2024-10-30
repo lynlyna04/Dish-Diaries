@@ -1,0 +1,201 @@
+body {
+    background-color: #E9EED9 !important;
+    color: #54473F !important;
+}
+
+.custom-btn {
+    background-color: #9A7E6F;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    color: #E9EED9;
+    border: none;
+    padding: 25px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.custom-btn:hover {
+    background-color: #54473F;
+    color: #fff;
+    cursor: pointer;
+}
+
+.custom-modal .modal-dialog {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.custom-modal .modal-header {
+    padding: 20px 40px !important;
+}
+
+.custom-modal .modal-body {
+    padding: 50px 100px !important;
+}
+
+.custom-modal .modal-footer {
+    padding: 15px 40px !important;
+}
+
+.custom-btn1 {
+    background-color: #9A7E6F;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.custom-btn1:hover {
+    background-color: #54473F;
+    color: #fff;
+    cursor: pointer;
+}
+
+#displaySection .col-md-3 {
+    margin-bottom: 20px !important;
+    gap: 1rem !important;
+}
+
+#recipeDetailsModal {
+    padding: 100px 300px !important;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.modal-body img {
+    margin-bottom: 10px;
+}
+
+#modalDescription {
+    margin-top: 10px;
+}
+
+.card {
+    border-style: solid;
+    border-color: #CBD2A4 !important;
+    border-width: 2px !important;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f8f9fa;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.custom-navbar {
+    background-color: #CBD2A4;
+    color: #54473F;
+}
+
+.custom-modal1 .modal-body {
+    padding: 70px 100px !important;
+}
+
+.custom-modal1 .modal-dialog {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.custom-btn2 {
+    background-color: #9A7E6F;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.custom-btn2:hover {
+    background-color: #54473F;
+    color: #fff;
+    cursor: pointer;
+}
+
+.navbar-brand img {
+    width: 70px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.custom-footer {
+    background-color: #54473F;
+    color: #CBD2A4;
+}
+
+.custom-btn3 {
+    background-color: #9A7E6F;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.custom-btn3:hover {
+    background-color: #54473F;
+    color: #fff;
+    cursor: pointer;
+}
+
+.custom-btn4 {
+    background-color: #CBD2A4;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    color: #54473F;
+    border: none;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.custom-btn4:hover {
+    background-color: #9A7E6F;
+    color: #fff;
+    cursor: pointer;
+}
+
+.recipe-image {
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: cover;
+}
